@@ -111,4 +111,3 @@ Pour une liste complète, consultez le fichier `package.json`.
 
 ## Licence
 Ce projet est sous licence **MIT**. Consultez le fichier `LICENSE` pour plus de détails.
-```
