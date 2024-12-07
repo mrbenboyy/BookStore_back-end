@@ -13,7 +13,6 @@ Le projet **Bookstore Backend** est une application serveur pour gérer une libr
 - [Structure du Projet](#structure-du-projet)
 - [API Endpoints](#api-endpoints)
 - [Dépendances](#dépendances)
-- [Contributeurs](#contributeurs)
 - [Licence](#licence)
 
 ---
@@ -31,29 +30,19 @@ Le projet **Bookstore Backend** est une application serveur pour gérer une libr
 ### Prérequis
 - **Node.js** (v14 ou supérieur)
 - **NPM** ou **Yarn**
-- Base de données relationnelle (PostgreSQL, MySQL, etc.)
 
 ### Étapes
 1. Clonez le dépôt :
    ```bash
-   git clone <URL_DU_DÉPÔT>
+   git clone https://github.com/mrbenboyy/BookStore_back-end.git
    cd bookstore-backend
    ```
 2. Installez les dépendances :
    ```bash
    npm install
    ```
-3. Configurez les variables d’environnement :
-   Créez un fichier `.env` à partir du modèle `.env.example` et configurez les paramètres suivants :
-   - **DATABASE_URL** : URL de connexion à la base de données.
-   - **PORT** : Port du serveur.
 
-4. Exécutez les migrations de base de données :
-   ```bash
-   npm run migrate
-   ```
-
-5. Lancez le serveur :
+3. Lancez le serveur :
    ```bash
    npm start
    ```
@@ -62,7 +51,7 @@ Le projet **Bookstore Backend** est une application serveur pour gérer une libr
 
 ## Utilisation
 ### Démarrer le serveur
-Une fois le serveur démarré, il sera accessible sur `http://localhost:<PORT>`.
+Une fois le serveur démarré, il sera accessible sur `http://localhost:9090`.
 
 ### Tester les routes
 Vous pouvez utiliser **Postman**, **Insomnia**, ou d'autres outils pour interagir avec l'API.
@@ -78,8 +67,6 @@ bookstore-backend/
 │   ├── services/       # Logique métier pour chaque entité
 │   ├── controllers/    # Contrôleurs pour gérer les requêtes
 │   ├── routes/         # Définition des routes API
-│   ├── database/       # Gestion des migrations et connexion DB
-│   ├── utils/          # Fonctions utilitaires partagées
 │   └── index.js        # Point d'entrée principal
 ├── .env.example        # Exemple de fichier de configuration
 ├── package.json        # Fichier des dépendances et scripts
@@ -115,10 +102,8 @@ bookstore-backend/
 ## Dépendances
 Les principales bibliothèques utilisées dans ce projet incluent :
 - **Express.js** : Framework backend pour Node.js.
-- **Sequelize** : ORM pour la gestion des bases de données.
 - **dotenv** : Gestion des variables d’environnement.
-- **Joi** : Validation des données d’entrée.
-- **Winston** : Logging.
+- **mongoose** : Bibliothèque pour Node.js permettant de gérer des bases de données MongoDB avec des modèles, des schémas et des validations..
 
 Pour une liste complète, consultez le fichier `package.json`.
 
