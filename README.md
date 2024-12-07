@@ -35,7 +35,7 @@ Le projet **Bookstore Backend** est une application serveur pour gérer une libr
 1. Clonez le dépôt :
    ```bash
    git clone https://github.com/mrbenboyy/BookStore_back-end.git
-   cd bookstore-backend
+   cd BookStore_back-end
    ```
 2. Installez les dépendances :
    ```bash
